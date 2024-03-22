@@ -1,0 +1,18 @@
+all:
+  hosts:
+    web01:
+      ansible_host: 172.31.85.134
+      ansible_user: ec2-user
+      ansible_ssh_private_key_file: clientkey.pem
+
+webservers:
+  hosts:
+    web01:
+
+other_group:
+  hosts:
+    otherhost:
+      ansible_host: 172.31.85.134
+      ansible_user: ec2-user
+      ansible_ssh_private_key_file: clientkey.pem
+
